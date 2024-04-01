@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #406480;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #406480;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 78, 0.685),
+    rgba(25, 25, 161, 0.774)
+  );
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 100, 0.685),
+    rgba(38, 38, 170, 0.774)
+  );
+}
+
+.header_bg {
+  height: 750px;
+  background-image: url(./img/bg_pic.png);
+  box-shadow: inset 0 0 0 1000px rgba(107, 106, 106, 0.6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header_slogan,
+.header_subscribe {
+  color: aliceblue;
+}
+
+.header_button {
+  font-size: 16px;
+  height: 50px;
+  width: 150px;
+  margin-top: 20px;
+  background-color: #003f91;
+  box-shadow: inset 0 0 0 1000px rgba(107, 106, 106, 0.2);
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.header_button:hover {
+  background-color: #0052bd;
+}
+
+.header_button:active {
+  background-color: #0069f1;
+}
+
+.header_links {
+  background-color: #485261;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about {
+  width: 50%;
+  margin: auto;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.about_p {
+  font-size: 20px;
+}
+
+.main_footballers {
+  margin-top: 50px;
+}
+
+.main_subscribe {
+  text-align: center;
+}
+
+.main_cards {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.main_card {
+  height: 350px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #47708f;
+  position: relative;
+  border-radius: 8px;
+  top: 0;
+  transition: top ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.main_card:hover {
+  top: -10px;
+}
+
+.card_pic {
+  height: 75%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card_pic img {
+  object-fit: cover;
+  width: 100%;
+  height: 275px;
+}
+
+.card_subscribe {
+  padding-top: 30px;
+}
+
+.card_subscribe h4 {
+  font-size: 20px;
+}
